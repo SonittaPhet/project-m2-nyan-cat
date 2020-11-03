@@ -1,10 +1,71 @@
 <html>
   <head>
-    <title>Nyan Kat</title>
+    <title>Ice cream game</title> 
+    <link rel="stylesheet" href="js/Engine.css" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <div id="app"></div>
-    <script src="js/data.js"></script>
+
+  <style>
+    #app {
+    display: flex;
+    height: 500px;
+    justify-content: left;
+  }
+  #title {
+    color: white;
+    z-index: 200;
+  }
+  
+  #alertBox {
+    position: absolute;
+    font-family: 'Alfa Slab One', cursive;
+    border-radius: 10%;
+    text-align: center;
+    top: 300px;
+    width: 350px;
+    border-radius: 10%;
+    visibility: hidden;
+    z-index: 500;
+  }
+  .reset-button {
+    font-family: 'Alfa Slab One', cursive;
+    color: pink;
+    background-color: white;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 65px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .title-section {
+    z-index: 200;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:20px;
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  </style>
+
+
+  <body> 
+    <div id="app">
+      <div class="title-section">
+      <h1 id="title">Ice cream challenge</h1>  
+      <h2>Life:</h2>
+      <h2 id="lives"></h2>
+    </div>
+      <div id="alertBox" >
+        <button class="reset-button">Reset</button>
+      </div>
+    </div>
+    <script src="js/data.js"></script> 
+    <script src="js/audio.js"></script>
     <script src="js/Enemy.js"></script>
     <script src="js/engine-utilities.js"></script>
     <script src="js/Engine.js"></script>
