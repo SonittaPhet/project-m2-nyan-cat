@@ -16,4 +16,4 @@
 
 ## Netlify
 
-https://infallible-montalcini-b5f9cb.netlify.app
+https://dont-touch-my-snack.netlify.app/
